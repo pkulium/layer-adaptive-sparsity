@@ -28,7 +28,7 @@ def model_and_opt_loader(model_string,DEVICE):
         batch_size = 100
         opt_pre = {
             "optimizer": partial(optim.AdamW,lr=0.0003),
-            "steps": 50000,
+            "steps": 1,
             "scheduler": None
         }
         opt_post = {

@@ -176,7 +176,7 @@ def _compute_lamp_amounts(model,amount):
     amounts = []
     for idx,final_surv in enumerate(final_survs):
         amounts.append(1.0 - (final_surv/unmaskeds[idx]))
-    
+    print(amounts)
     return amounts
 
 def _compute_erks(model):

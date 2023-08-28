@@ -5,9 +5,9 @@ from tools import *
 """ ARGUMENT PARSING """
 parser = argparse.ArgumentParser()
 parser.add_argument('--seed', type=int, default=42, help='random seed')
-parser.add_argument('--cuda', type=int, help='cuda number')
-parser.add_argument('--model', type=str, help='network')
-parser.add_argument('--pruner', type=str, help='pruning method')
+parser.add_argument('--cuda', default = 0, type=int, help='cuda number')
+parser.add_argument('--model', default = 'resnet18', type=str, help='network')
+parser.add_argument('--pruner', default = 'lamp', type=str, help='pruning method')
 parser.add_argument('--iter_start', type=int, default=1, help='start iteration for pruning')
 parser.add_argument('--iter_end', type=int, default=20, help='start iteration for pruning')
 
